@@ -1,0 +1,22 @@
+body{
+    /* font-size:20px; */
+    font-family: 'Ubuntu', sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+.navbar{
+    background-color: yellow;
+}
+.aboutus{
+background-color: blue ;
+color: lavender;
+}
+
+.partners{
+    background-color: rgb(187, 153, 0) ;
+    color: lavender;
+    }
+
+.margie{
+    padding-top: 20px;
+    padding-bottom: 20px;   
+}
