@@ -3,6 +3,10 @@ body{
     font-family: 'Ubuntu', sans-serif;
     /* font-family: Arial, Helvetica, sans-serif; */
 }
+.bg-footer{
+    background-color: black;
+    color:white;
+}
 .navbar{
     background-color: yellow;
 }
@@ -11,10 +15,21 @@ background-color: blue ;
 color: lavender;
 }
 
+.desc{
+    text-align: justify;
+    
+}
+
 .partners{
     background-color: rgb(187, 153, 0) ;
     color: lavender;
     }
+
+.services{
+        background-color: rgb(67, 165, 10) ;
+        color: lavender;
+        }
+    
 
 .margie{
     padding-top: 20px;
