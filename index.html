@@ -11,6 +11,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha página inicial</title>
 </head>
+<script>
+    function myAct(gim) {
+gim = gim;
+set = 'huck';
+stage = 0;
+if ( gim == set) {
+            console.log("Parceiros mudados");
+            if (stage != 1){
+                console.log("Stage 1");
+                var element = document.getElementById("parceiros");
+            element.classList.add('mudarvis');
+            
+            var element = document.getElementById("servicos");
+            element.classList.add('mudarvis');
+
+            var element = document.getElementById("quem-somos");
+            element.classList.remove('mudarvis');
+
+            stage = 1;
+            console.log(stage);
+            }
+          
+        } 
+
+        if ( gim == 'azub') {
+            console.log("Nossos parceiros");
+            if (stage != 2 ) {
+                console.log("Stage 2");
+                var element = document.getElementById("quem-somos");
+            element.classList.add('mudarvis');
+            
+            var element = document.getElementById("servicos");
+            element.classList.add('mudarvis');
+
+            var element = document.getElementById("parceiros");
+            element.classList.remove('mudarvis');
+
+            stage = 2;
+            console.log(stage);
+
+            }
+            
+        } 
+
+        if ( gim == 'confc') {
+            console.log("Stage 3 ");
+            if (stage != 3 ) {
+
+            var element = document.getElementById("quem-somos");
+            element.classList.add('mudarvis');
+            
+            var element = document.getElementById("parceiros");
+            element.classList.add('mudarvis');
+
+            var element = document.getElementById("servicos");
+            element.classList.remove('mudarvis');
+
+            stage = 3;
+            console.log(stage);
+
+        } 
+
+    }
+    }
+</script>
 <style>
     
 </style>
@@ -23,13 +88,13 @@
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
                 <li class="nav-item" >
-                    <a class="nav-link" href="#quem-somos">Quem somos?</a>
+                    <a class="nav-link" onclick="myAct('huck')" href="#quem-somos">Quem somos?</a>
                 </li>
                 <li class="nav-item" >
-                    <a class="nav-link" href="#">Parceiros</a>
+                    <a class="nav-link" onclick="myAct('azub')" href="#parceiros">Parceiros</a>
                 </li>
                 <li class="nav-item" >
-                    <a class="nav-link" href="#">Serviços</a>
+                    <a class="nav-link" onclick="myAct('confc')" href="#servicos">Serviços</a>
                 </li>
             </ul>
         </div>
@@ -40,13 +105,13 @@
             <h1 class="margie">Sobre nós</h1>
             <img src="img/pexels-andre-furtado-3859984.jpg" class="rounded-circle" width="300" height="300">
             <h2>Somos  um time comprometido com resultados</h2>
-            <div class="desc">
+            <div class="text-center">
                 <p>Trabalhamos com a promoção da sustentabilidade através da oferta de hotspots para aluguel de bicicletas de forma simples para os melhores eventos</p>
             </div>
             
         </div>
     </section>
-    <section id="parceiros">
+    <section id="parceiros" class="mudarvis">
         <div class="container-fluid partners text-center margie">
             <h1 class="margie">Parceiros</h1>
             <div class="container">
@@ -63,7 +128,7 @@
                </div>            </div>
         </div>
     </section>
-    <section id="servicos">
+    <section id="servicos" class="mudarvis">
         <div class="container-fluid services text-center margie">
             <h1 class="margie">Serviços</h1>
             <div class="container">
@@ -82,8 +147,6 @@
                     </div>
                 </div>
             </div>
-            <img src="img/pexels-festus-obi-10824946.jpg" class="rounded-circle" width="300" height="300">
-            <h2>Somos  um time comprometido com resultados</h3>
         </div>
     </section>
 <footer class="container-fluid text-center bg-footer margie">

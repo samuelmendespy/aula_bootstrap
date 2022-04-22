@@ -16,7 +16,7 @@ color: lavender;
 }
 
 .desc{
-    text-align: justify;
+    /* text-align: justify; */
     
 }
 
@@ -30,7 +30,9 @@ color: lavender;
         color: lavender;
         }
     
-
+.mudarvis{
+    display: none;
+}
 .margie{
     padding-top: 20px;
     padding-bottom: 20px;   
